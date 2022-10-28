@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: grid;
+    place-content:center ;
+    min-height: 100vh;
+    background-color: hsl(185, 75%, 39%);
+    position: relative;
+    overflow:  hidden;
+}
+.top-background{
+    position: absolute;
+    top: -90%;
+    left: -30%;
+    display: none;
+}
+.bottom-background{
+    position: absolute;
+    bottom: -90%;
+    right: -30%;
+    display: none;
+
+}
+.contanier{
+    padding: 20px 40px;
+}
+.card{
+    background-color: white;
+    border-radius: 8px;
+}
+.card .one{
+    border-top-left-radius:8px ;
+    border-top-right-radius: 8px;
+}
+
+.card .avtar{
+    position: absolute;
+    border-radius: 50%;
+    border: 3px solid white;
+    left: 46%;
+    top: 33%;
+}
+@media (max-width:491) {
+    .card.avtar{
+        left: 36%;
+        top: 38%;
+    }
+}
+.head{
+    margin-top:50px ;
+    text-align: center;
+}
+.head h2{
+    font-size: 22px;
+    color: hsl(229, 23%, 23%);
+}
+.head h2 span{
+    color: hsl(227, 10%, 46%);
+    font-size: 18px;
+    margin-left:10px;
+}
+.head h3{
+    font-size: 16px;
+    margin-top: 10px;
+    color: hsl(227, 10%, 46%);
+}
+.info{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.info::after{
+    content: "";
+    position: absolute;
+    border-bottom: 1px solid hsl(227, 10%, 46%);
+    bottom: 90%;
+    left: 0;
+    width: 100%;
+    height: 1px;
+}
+.info .info-head h3{
+    display: inline-block;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 50px;
+    color: hsl(229, 23%, 23%);
+}
+.info .info-bottom p{
+    display: inline-block;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+    color: hsl(227, 10%, 46%);
+    margin-bottom: 20px;
+}
